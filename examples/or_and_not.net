@@ -1,0 +1,12 @@
+INPUTS: A B C
+OUTPUTS: Y
+GATES:
+  T1 = OR(A, B)
+  T2 = NOT(C)
+  Y  = AND(T1, T2)
+STIMULUS:
+  0  0 0 0
+  1  1 0 0
+  2  0 1 1
+  3  0 0 1
+

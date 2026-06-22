@@ -1,0 +1,19 @@
+INPUTS: A B C D E F G H
+OUTPUTS: Y
+GATES:
+  T1 = AND(A, B)
+  T2 = XOR(C, D)
+  T3 = OR(T1, E)
+  T4 = AND(T2, F)
+  T5 = XOR(T3, T4)
+  T6 = NOT(G)
+  T7 = AND(T5, T6)
+  Y  = OR(T7, H)
+STIMULUS:
+  0  0 0 0 0 0 0 0 0
+  1  1 0 0 1 0 1 1 0
+  2  1 1 1 0 1 0 0 0
+  3  0 1 1 1 1 1 1 1
+  4  1 1 0 1 0 1 0 1
+  5  0 0 1 0 1 0 1 0
+
